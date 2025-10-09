@@ -1,9 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
+	var x int = 100
+	var name string = "navya"
+	y := "1"
+	fmt.Println("declared variables are :  ", x, name, y)
 }
