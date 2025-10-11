@@ -1,3 +1,15 @@
+/*
+Creating an HTTP server in Go.
+Handling long-running requests.
+Using goroutines to start the server concurrently.
+Capturing OS signals for graceful shutdown.
+Using context.WithTimeout to enforce a shutdown deadline.
+Expected Behavior
+
+Start server: Server started on :8080
+Visit http://localhost:8080/, logs Request started, waits 10s, then Request finished.
+Press Ctrl+C during a request → shutdown initiated, server waits up to 5 seconds for requests to finish, then exits.
+*/
 package main
 
 import (
