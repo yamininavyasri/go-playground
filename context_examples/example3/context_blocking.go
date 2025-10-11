@@ -10,14 +10,12 @@ func worker(ctx context.Context) {
 	start := time.Now()
 
 	fmt.Println("Worker started and waiting for cancellation...")
-	// This select will **block indefinitely** until ctx.Done() is closed
-	select {
-	case <-ctx.Done():
-		elapsed := time.Since(start).Seconds()
-		fmt.Printf("Worker stopped due to cancellation after %.2f seconds\n", elapsed)
-	}
+	// This will **block indefinitely** until ctx.Done() is closed
+	<-ctx.Done()
 	elapsed := time.Since(start).Seconds()
+	fmt.Printf("Worker stopped due to cancellation after %.2f seconds\n", elapsed)
 	fmt.Printf("Worker finished all tasks in %.2f seconds\n", elapsed)
+	fmt.Println("worker remained idle during wait time")
 }
 
 func main() {
