@@ -43,7 +43,7 @@ This command will download and install any dependencies specified in the go.mod 
 ▶️ Running the Programs
 Each folder contains Go files that can be run individually. For example, to run the functions_example:
 cd functions_example
-go run main.go
+go run functions.go // run the respective .go file.
 Repeat this process for other folders as needed.
 
 🧪 Running Unit Tests
