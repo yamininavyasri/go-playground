@@ -1,5 +1,5 @@
-/*A goroutine is a lightweight thread managed by the Go runtime.
-
+/*
+A goroutine is a lightweight thread managed by the Go runtime.
 In simple terms:
 A goroutine allows you to run functions concurrently (at the same time) — without manually dealing with threads or complex synchronization.
 Every Go program starts with one main goroutine (the main() function).
