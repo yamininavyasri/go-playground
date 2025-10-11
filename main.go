@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/yaminivenkat.grandhi/go-playground/packages/mathutil"
-	"github.com/yaminivenkat.grandhi/go-playground/packages/stringutil"
+	"github.com/yamininavyasri/go-playground/packages/mathutil"
+	"github.com/yamininavyasri/go-playground/packages/stringutil"
 )
 
 func main() {
