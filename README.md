@@ -3,6 +3,8 @@ A personal playground for exploring and practicing Go (Golang) concepts, snippet
 
 📂 Project Structure
 go-playground/
+├── build_tags/
+├── channels/
 ├── collections/
 ├── conditions/
 ├── context_examples/
@@ -43,6 +45,45 @@ If you haven't already initialized Go modules:
 go mod tidy
 This command will download and install any dependencies specified in the go.mod file.
 
+Beginner Level
+
+Start with core language concepts and basic operations:
+variable_types/ → Learn Go data types (int, float, string, bool, arrays, slices).
+collections/ → Work with arrays, slices, maps.
+conditions/ → if, else, switch.
+loop_examples/ → for loops, range, nested loops.
+functions_example/ → Regular functions, parameters, return values, variadic functions.
+pointers/ → Learn pointers, references, and memory basics.
+structs/ → Define structs, use fields, and basic methods.
+string_manipulations/ → String operations like trimming, splitting, concatenation.
+
+Intermediate Level
+After you’re comfortable with the basics, move to more structured and functional concepts:
+interfaces/ → Understanding interfaces, polymorphism, and method embedding.
+packages/ → Organize code into separate packages and learn importing.
+defer_example/ → Learn defer, panic, and recover.
+error_handling/ → Idiomatic error handling in Go.
+env_config/ → Using environment variables and configuration.
+time_example/ → Working with time, timers, and sleep.
+switch_example/ → Advanced usage of switch statements.\
+
+Advanced Level
+
+Once comfortable with intermediate topics, explore concurrency, HTTP, testing, and advanced patterns:
+go_routines/ → Learn goroutines for concurrency.
+channels/ → Communicate between goroutines using channels.
+mutex/ → Synchronize concurrent access using sync.Mutex.
+context_examples/ → Use context for cancellations and timeouts.
+http_example/ → Create HTTP servers and clients.
+build_tags/ → Understand custom build tags and conditional compilation.
+fileio/ → Reading/writing files, creating/deleting files.
+unit_testing/ → Writing tests with Go’s testing package.
+
+✅ Tips for Practicing:
+Focus on one folder at a time. Run the example, then modify it to experiment.
+Start with small programs, then combine concepts as you progress.
+Keep notes on common patterns and errors you encounter.
+
 ▶️ Running the Programs
 Each folder contains Go files that can be run individually. For example, to run the functions_example:
 cd functions_example
@@ -60,7 +101,7 @@ cd http_example
 go run main.go
 Then, open your browser and navigate to http://localhost:8080 to interact with the server.
 
-🧠 Understanding the Examples
+🧠 Understanding the Examples.
 
 Each folder demonstrates a specific Go concept:
 
