@@ -7,6 +7,9 @@ go-playground/
 ├── conditions/
 ├── context_examples/
 ├── defer_example/
+├── env_config/
+├── error_handling/
+├── fileio /
 ├── functions_example/
 ├── go.mod
 ├── go.sum
@@ -61,6 +64,10 @@ Then, open your browser and navigate to http://localhost:8080 to interact with t
 
 Each folder demonstrates a specific Go concept:
 
+build_tags/: Examples of custom build tags for conditional compilation (dev, prod, etc.).
+
+channels/: Working with Go channels for concurrency, synchronization, and communication between goroutines.
+
 collections/: Working with slices, maps, and arrays
 
 conditions/: Using if, else, and switch statements
@@ -68,6 +75,12 @@ conditions/: Using if, else, and switch statements
 context_examples/: Managing request contexts
 
 defer_example/: Understanding defer statements
+
+env_config/: Examples of environment configuration using os.Getenv and os.LookupEnv.
+
+error_handling/: Demonstrating idiomatic error checking and handling in Go.
+
+fileio/: Performing file input/output operations, including creating, reading, writing, and deleting files.
 
 functions_example/: Defining and using functions
 
